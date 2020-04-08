@@ -1,14 +1,12 @@
 ---
-title: "Setting up First Post"
-date: 2020-04-08T00:04:18+02:00
+title: Setting up First Post
+date: 2020-04-07T22:04:18.000+00:00
 draft: true
+
 ---
-
-
-Personal notes on setting up non-essentials
+Personal notes on setting up non-essentials woot
 
 ```sh
-
 # 2 ways to check linux distr and version
 
 $ hostnamectl
@@ -36,7 +34,6 @@ $ curl -L git.io/antigen > antigen.zsh
 $ sudo apt-get install autojump
 
 modify ~/.zshrc to use antigen :
-
 ```
 
 ```file
@@ -78,8 +75,6 @@ antigen theme robbyrussell
 
 # Tell antigen that you are done
 antigen apply
-
 ```
 
 Running zsh next time will install those plugins. We are ready to go !
-
