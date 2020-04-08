@@ -1,0 +1,7 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "New sbadillo7 Site"
+
+# theme = "ananke"
+theme = "hugo-theme-chunky-poster"
+
