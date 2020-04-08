@@ -1,6 +1,7 @@
 ---
 title: Setting up First Post
 date: 2020-04-07T22:04:18.000+00:00
+draft: true
 
 ---
 Personal notes on setting up non-essentials
