@@ -7,3 +7,6 @@
 [submodule "themes/hugo-theme-chunky-poster"]
 	path = themes/hugo-theme-chunky-poster
 	url = https://github.com/puresyntax71/hugo-theme-chunky-poster
+[submodule "themes/hugo-theme-novela"]
+	path = themes/hugo-theme-novela
+	url = https://github.com/forestryio/hugo-theme-novela

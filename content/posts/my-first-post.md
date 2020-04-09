@@ -1,7 +1,10 @@
 ---
 title: Setting up First Post
-date: 2020-04-07T22:04:18.000+00:00
+date: 2020-04-07
 
+image : "/images/black-cohosh.png"
+excerpt: alsdkasd askda ls
+draft: false
 ---
 Personal notes on setting up non-essentials
 
