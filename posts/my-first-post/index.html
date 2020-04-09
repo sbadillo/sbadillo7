@@ -1,0 +1,72 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>Setting up First Post |
+New sbadillo7 Site</title><meta name=author content><link rel=stylesheet href=/dist/main.37ab3f61b95417873748.min.css><link rel=canonical href=http://example.org/posts/my-first-post/><meta property="og:title" content="Setting up First Post"><meta property="og:description" content="Personal notes on setting up non-essentials
+# 2 ways to check linux distr and version $ hostnamectl $ lsb_release -a # update package index $ sudo apt-get update # install git $ sudo apt-get install git $ sudo apt-get install vim # install pydf $ sudo apt-get install pydf # Install zsh and its plugin manager Antigen # install zsh $ sudo apt-get install zsh $ chsh -s $(which zsh) $ echo $SHELL # use curl to get latest Antigen, and get autojump on the side."><meta property="og:type" content="article"><meta property="og:url" content="http://example.org/posts/my-first-post/"><meta property="article:published_time" content="2020-04-07T22:04:18+00:00"><meta property="article:modified_time" content="2020-04-07T22:04:18+00:00"><meta itemprop=name content="Setting up First Post"><meta itemprop=description content="Personal notes on setting up non-essentials
+# 2 ways to check linux distr and version $ hostnamectl $ lsb_release -a # update package index $ sudo apt-get update # install git $ sudo apt-get install git $ sudo apt-get install vim # install pydf $ sudo apt-get install pydf # Install zsh and its plugin manager Antigen # install zsh $ sudo apt-get install zsh $ chsh -s $(which zsh) $ echo $SHELL # use curl to get latest Antigen, and get autojump on the side."><meta itemprop=datePublished content="2020-04-07T22:04:18+00:00"><meta itemprop=dateModified content="2020-04-07T22:04:18+00:00"><meta itemprop=wordCount content="229"><meta itemprop=keywords content><meta name=twitter:card content="summary"><meta name=twitter:title content="Setting up First Post"><meta name=twitter:description content="Personal notes on setting up non-essentials
+# 2 ways to check linux distr and version $ hostnamectl $ lsb_release -a # update package index $ sudo apt-get update # install git $ sudo apt-get install git $ sudo apt-get install vim # install pydf $ sudo apt-get install pydf # Install zsh and its plugin manager Antigen # install zsh $ sudo apt-get install zsh $ chsh -s $(which zsh) $ echo $SHELL # use curl to get latest Antigen, and get autojump on the side."></head><body><nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id=navbar-main-menu><div class=container><a class="navbar-brand font-weight-bold" href=http://example.org/>New sbadillo7 Site</a>
+<button class=navbar-toggler type=button data-toggle=collapse data-target=#main-menu aria-controls=main-menu aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=main-menu><ul class="navbar-nav ml-auto"></ul></div></div></nav><main class="content-page container pt-7 pb-5"><div class=row><div class=col><article><div class="row justify-content-center"><div class=col-lg-8><h2 class=mb-3>Setting up First Post</h2><div class=content><p>Personal notes on setting up non-essentials</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=color:#75715e># 2 ways to check linux distr and version</span>
+
+$ hostnamectl
+$ lsb_release -a
+
+<span style=color:#75715e># update package index</span>
+$ sudo apt-get update
+
+<span style=color:#75715e># install git</span>
+$ sudo apt-get install git
+$ sudo apt-get install vim
+
+<span style=color:#75715e># install pydf</span>
+$ sudo apt-get install pydf
+
+<span style=color:#75715e># Install zsh and its plugin manager Antigen</span>
+
+<span style=color:#75715e># install zsh</span>
+$ sudo apt-get install zsh
+$ chsh -s <span style=color:#66d9ef>$(</span>which zsh<span style=color:#66d9ef>)</span>
+$ echo $SHELL
+
+<span style=color:#75715e># use curl to get latest Antigen, and get autojump on the side.</span>
+$ curl -L git.io/antigen &gt; antigen.zsh
+$ sudo apt-get install autojump
+
+modify ~/.zshrc to use antigen :
+</code></pre></div><pre><code class=language-file data-lang=file># ~/.zshr 
+
+source $HOME/antigen.zsh
+
+export TERM=&quot;xterm-256color&quot;
+
+# needed to add all programs installed by pip --user to the path.
+# export PATH=$PATH:~/.local/bin
+
+# custom commands executed everytime a terminal is opened: 
+## make graph of disk usage
+# pydf -h -m 
+
+# Load oh-my-zsh library
+antigen use oh-my-zsh
+
+# Bundles from the default repo (robbyrussells)
+antigen bundle git
+antigen bundle autojump
+antigen bundle themes
+antigen bundle command-not-found
+antigen bundle colored-man-pages
+
+# Bundles from other sources:
+## Syntax highlighting bundle.
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+## Fishlike auto suggestions
+antigen bundle zsh-users/zsh-autosuggestions
+
+## Extra zsh completions
+antigen bundle zsh-users/zsh-completions
+
+# load the theme
+antigen theme robbyrussell
+
+# Tell antigen that you are done
+antigen apply
+</code></pre><p>Running zsh next time will install those plugins. We are ready to go !</p></div></div></div></article></div></div></main><footer class="footer text-center bg-dark py-6"><div class=container><div class=row><div class=col><ul class=list-inline></ul><p class=text-muted>Copyright &copy; New sbadillo7 Site 2020</p><p class=text-muted>Powered by <a href=https://gohugo.io target=_blank>Hugo</a> with <a href=https://github.com/puresyntax71/hugo-theme-chunky-poster target=_blank>Chunky Poster</a>.</p></div></div></div></footer><script src=/dist/main.d608eadfe5ac0688902e.min.js></script></body></html>
